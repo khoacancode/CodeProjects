@@ -5,10 +5,10 @@ function palindrome(myString){
 
 	document.write("<div>"+ formattedStr+ "<br> "+reversedStr);
 	if(formattedStr === reversedStr){
-		document.write("<br>"+ myString + " is a Palindrome </div>");
+		document.write("<br>Palindrome </div>");
 	}
 	else {
-		document.write("<br>" + myString + " is not a Palindrome </div>");
+		document.write("<br>NOT a Palindrome </div>");
 	}
 }
 
