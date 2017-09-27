@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService } from '../../services/data.services';
 
 @Component({
   selector: 'app-user',
@@ -14,7 +15,7 @@ export class UserComponent implements OnInit {
   hello:any;
   
   
-  constructor() {
+  constructor(private datatService:DataService) {
     console.log('constructor ran...');
   }
 
