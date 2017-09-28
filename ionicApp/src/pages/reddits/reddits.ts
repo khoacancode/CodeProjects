@@ -16,19 +16,19 @@ export class RedditsPage {
     this.getDefaults();
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this.getPosts(this.category, this.limit);
   }
 
-  getDefaults(){
-    if(localStorage.getItem('category') != null) {
-      this.category= localStorage.getItem('category');
+  getDefaults() {
+    if (localStorage.getItem('category') != null) {
+      this.category = localStorage.getItem('category');
     }
     else {
       this.category = 'sports';
     }
 
-    if(localStorage.getItem('limit') != null) {
+    if (localStorage.getItem('limit') != null) {
       this.limit = localStorage.getItem('limit');
     }
     else {
@@ -36,18 +36,19 @@ export class RedditsPage {
     }
   }
 
-  getPosts(category, limit){
+  getPosts(category, limit) {
     this.redditService.getPosts(category, limit).subscribe(response => {
       this.items = response.data.children;
     });
   }
 
-  viewItem(item){
+  viewItem(item) {
     this.navCtrl.push(DetailsPage, {
-      item:item});    
+      item: item
+    });
   }
 
-  changeCategory(){
+  changeCategory() {
     this.getPosts(this.category, this.limit);
   }
 }

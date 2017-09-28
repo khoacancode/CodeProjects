@@ -12,8 +12,7 @@ export class TabsPage {
   tab1Root = RedditsPage;
   tab3Root = SettingsPage;
   tab2Root = AboutPage;
-
+  
   constructor() {
-
   }
 }
