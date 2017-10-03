@@ -10,5 +10,4 @@ export class DetailsPage {
     constructor(public navCtrl: NavController, public params:NavParams) {
         this.item = params.get('item');
     }
-
 }
