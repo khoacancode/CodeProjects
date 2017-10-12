@@ -1,7 +1,6 @@
 /*
-my jsfiddle code to the clock problem on exorcism.io interview question:
+my jsfiddle implementation for the clock problem on exorcism.io:
 http://exercism.io/exercises/javascript/clock/readme
-
 */
 
 "use strict";
